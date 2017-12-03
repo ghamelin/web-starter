@@ -8,8 +8,8 @@ var gulp            = require('gulp'),
     cssnext         = require('postcss-cssnext'),
     sass            = require('gulp-sass');
 var plugs           = [shortcss, cssnext];
-var sassSrc = 'src/sass/main.sass';
-var sassDest = 'public/css/styles.min.css';
+var sassSrc = "src/scss/main.scss";
+var sassDest = "public/css/";
 
 
 gulp.task('sass', function () {
@@ -18,6 +18,7 @@ gulp.task('sass', function () {
     .pipe(sass())
     .pipe(postcss(plugs))
     .pipe(plugins.cleanCss())
+    .pipe(plugins.concat("styles.min.css"))
     .pipe(plugins.sourcemaps.write('.'))
     .pipe(gulp.dest(sassDest))
 })
