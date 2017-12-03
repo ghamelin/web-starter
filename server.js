@@ -1,24 +1,14 @@
 var app    = require('express')(),
     port   = process.env.PORT || 8080,
-    morgan = require('morgan');
+    morgan = require('morgan'),
+    router = require('./app/routes');
 
 
 // configure
 app.use(morgan('dev'));
 
 //set routes
-app.get('/', function(req,res){
-  res.send('home page');
-});
-app.get('/premise', function(req,res) {
-  res.send('premise page');
-});
-app.get('/sources', function(req,res){
-  res.send('sources page');
-});
-app.get('/contact', function(req,res){
-  res.send('contact page');
-});
+app.use('/', router);
 
 // start server
 app.listen(port, function(){
