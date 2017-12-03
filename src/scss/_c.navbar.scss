@@ -1,0 +1,26 @@
+.navbar {
+  overflow: hidden;
+}
+/*------------------------------------*\
+  #COMPONENT-NAV
+\*------------------------------------*/
+.navbar {
+  overflow: hidden;
+}
+.nav {
+  text-align: center;
+
+  &--item {
+    display: inline-block;
+    padding: .5rem .5rem .5rem .25rem;
+    vertical-align: middle;
+  }
+  &--link {
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, .1);
+  
+    &:hover {
+      color: green;
+    }
+  }
+}
+
