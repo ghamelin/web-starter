@@ -1,0 +1,26 @@
+/*------------------------------------*\
+  #COMPONENT-HEADINGS
+\*------------------------------------*/
+.title--page{
+  text-align: center;
+  color: $darkAccentColor;
+  margin: $spacing-stack-default;
+}
+
+.title--sect {
+  color: $secondaryColor;
+  margin:$spacing-stack-default;
+  text-align: left;
+
+  &__disclaim {
+    color: $primaryColor;
+    text-align: center;
+
+  }
+}
+
+.title--scene {
+  color: $secondaryColor;
+  margin: $spacing-stack-default;
+  text-align: center;
+}
