@@ -1,26 +1,34 @@
 /*------------------------------------*\
   #COMPONENT-HEADINGS
 \*------------------------------------*/
-.title--page{
+@import "_s.all-settings";
+
+.title {
+  margin: $spacing-stack-default;
   text-align: center;
   color: $darkAccentColor;
-  margin: $spacing-stack-default;
-}
 
-.title--sect {
-  color: $secondaryColor;
-  margin:$spacing-stack-default;
-  text-align: left;
-
-  &__disclaim {
-    color: $primaryColor;
+  &--page{
+    @extend .title;
     text-align: center;
-
+    color: $darkAccentColor;
   }
-}
 
-.title--scene {
-  color: $secondaryColor;
-  margin: $spacing-stack-default;
-  text-align: center;
+  &--sect {
+    @extend .title;
+    color: $secondaryColor;
+    text-align: left;
+
+    &__disclaim {
+      @extend .title;
+      color: $primaryColor;
+      text-align: center;
+
+    }
+  }
+  &--scene {
+    @extend .title;
+    color: $secondaryColor;
+    text-align: center;
+  }
 }
