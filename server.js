@@ -1,4 +1,5 @@
-var app    = require('express')(),
+var express = require('express'),
+    app    = express(),
     port   = process.env.PORT || 8080,
     morgan = require('morgan'),
     router = require('./app/routes');
@@ -9,6 +10,9 @@ app.use(morgan('dev'));
 
 //set routes
 app.use('/', router);
+
+// static files location
+app.use(express.static(__dirname + '/public'));
 
 // start server
 app.listen(port, function(){
