@@ -5,7 +5,7 @@
   "tasks": [
     {
       "type": "gulp",
-      "task": "sass",
+      "task": "build",
       "problemMatcher": [],
       "group": {
         "kind": "build",
