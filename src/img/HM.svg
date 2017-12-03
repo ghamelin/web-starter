@@ -1,0 +1,24 @@
+<svg width="487" height="740" viewBox="0 0 487 740" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>New HM</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2781 60)">
+<g id="New HM">
+<mask id="mask0_alpha" mask-type="alpha">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-2780.79 -59.6602)" fill="#C4C4C4"/>
+<use xlink:href="#path1_fill" transform="translate(-2780.79 -59.6602)" fill="#C4C4C4"/>
+<use xlink:href="#path2_fill" transform="translate(-2780.79 -59.6602)" fill="#C4C4C4"/>
+</g>
+</mask>
+<g id="Rectangle" mask="url(#mask0_alpha)">
+<use xlink:href="#path3_fill" transform="translate(-3038.19 -190.988)"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 38.934 725.41L 70.5118 738.814L 378.43 13.404L 346.852 0L 38.934 725.41Z"/>
+<path id="path1_fill" d="M 191.716 183.156L 227.534 183.156L 227.534 267.966L 183.211 372.386L 35.8183 372.386L 35.8183 517.232L 0 517.232L 0 183.895L 35.8183 183.895L 35.8183 336.568L 191.716 336.568L 191.716 183.156Z"/>
+<path id="path2_fill" d="M 486.683 594.068L 350.11 272.322L 327.81 272.322L 254.352 445.379L 227.695 382.581L 208.24 428.417L 243.202 510.782L 265.502 510.782L 338.96 337.724L 453.712 608.064L 486.683 594.068Z"/>
+<path id="path3_fill" d="M 0 0L 1001.47 0L 1001.47 1001.47L 0 1001.47L 0 0Z"/>
+</defs>
+</svg>
