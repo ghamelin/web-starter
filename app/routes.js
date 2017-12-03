@@ -1,7 +1,8 @@
-var router = require('express').Router();
+var router = require('express').Router(),
+    path   = require('path');
 
 router.get('/', function (req, res) {
-  res.send('home page');
+  res.sendFile(path.join(__dirname, '../index.html'));
 });
 router.get('/premise', function (req, res) {
   res.send('premise page');
