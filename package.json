@@ -1,0 +1,27 @@
+{
+  "name": "engl2010-proj",
+  "version": "1.0.0",
+  "description": "Companion project to researched argument essay",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redhedgh12/engl2010researchproj.git"
+  },
+  "author": "D. Garrett Hamelin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redhedgh12/engl2010researchproj/issues"
+  },
+  "homepage": "https://github.com/redhedgh12/engl2010researchproj#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "nodemon": "^1.12.1"
+  }
+}
