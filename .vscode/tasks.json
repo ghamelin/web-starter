@@ -6,7 +6,12 @@
     {
       "type": "gulp",
       "task": "sass",
-      "problemMatcher": []
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
+
   ]
 }
