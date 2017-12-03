@@ -1,0 +1,28 @@
+/*------------------------------------*\
+  #SETTINGS-Spacing
+\*------------------------------------*/
+@import "_settings.fonts";
+
+$spacing-inset-default: 1rem 1rem 1rem 1rem;
+$spacing-inset-xs: 0.25rem 0.25rem 0.25rem 0.25rem;
+$spacing-inset-s: 0.5rem 0.5rem 0.5rem 0.5rem;
+$spacing-inset-m: 1rem 1rem 1rem 1rem;
+$spacing-inset-l: 2rem 2rem 2rem 2rem;
+$spacing-inset-xl: 4rem 4rem 4rem 4rem;
+$spacing-stack-default: 0 0 1rem 0;
+$spacing-stack-xs: 0 0 0.25rem 0;
+$spacing-stack-s: 0 0 0.5rem 0;
+$spacing-stack-m: 0 0 1rem 0;
+$spacing-stack-l: 0 0 2rem 0;
+$spacing-stack-xl: 0 0 4rem 0;
+$spacing-inline-xs: 0 0.25rem 0 0;
+$spacing-inline-s: 0 0.5rem 0 0;
+$spacing-inline-m: 0 1rem 0 0;
+$spacing-inline-l: 0 2rem 0 0;
+$spacing-inline-xl: 0 4rem 0 0;
+$spacing-default: 1rem;
+$spacing-xs: 0.25rem;
+$spacing-s: 0.5rem;
+$spacing-m: 1rem;
+$spacing-l: 2rem;
+$spacing-xl: 4rem;

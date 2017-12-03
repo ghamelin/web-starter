@@ -7,5 +7,9 @@
 @import "_b.header";
 @import "_b.links";
 
+//settings
+@import "_s.all-settings";
+
 // components
 @import "_c.title";
+@import "_c.navbar";
