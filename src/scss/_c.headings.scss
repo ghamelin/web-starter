@@ -18,13 +18,6 @@
     @extend .title;
     color: $secondaryColor;
     text-align: left;
-
-    &__disclaim {
-      @extend .title;
-      color: $primaryColor;
-      text-align: center;
-
-    }
   }
   &--scene {
     @extend .title;
