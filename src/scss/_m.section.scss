@@ -1,19 +1,19 @@
 .section{
   width: 100%;
-  padding: $spacing-inset-default;
-  margin: $spacing-stack-l;
+  padding: $space-inset-default;
+  margin: $space-stack-l;
   text-align: center;
 
   &.hero {
     .title--sect{
-      margin:$spacing-stack-s;
+      margin:$space-stack-s;
       text-align: center;
     }
   }
   &.disclaim{
     >.title--sect{
       color: $primaryColor;
-      margin: $spacing-stack-s;
+      margin: $space-stack-s;
       text-align: center;
       text-transform: uppercase;
     }
@@ -25,5 +25,5 @@
 .sect--text {
   text-align: left;
   line-height: 4;
-  margin:$spacing-stack-s;
+  margin:$space-stack-s;
 }
