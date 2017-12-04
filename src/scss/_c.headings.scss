@@ -4,23 +4,22 @@
 @import "_s.all-settings";
 
 .title {
-  margin: $space-stack-default;
+  margin: $space-stack-s;
   text-align: center;
   color: $darkAccentColor;
 
   &--page{
-    @extend .title;
     text-align: center;
     color: $darkAccentColor;
+    margin:$space-stack-xl;
+    font-weight: lighter;
   }
 
   &--sect {
-    @extend .title;
     color: $secondaryColor;
-    text-align: left;
+    text-align: center;
   }
   &--scene {
-    @extend .title;
     color: $secondaryColor;
     text-align: center;
   }

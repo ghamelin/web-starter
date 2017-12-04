@@ -1,8 +1,10 @@
 /*------------------------------------*\
   #COMPONENT-IMG
 \*------------------------------------*/
-
+.img{
+  width: $space-s;
+}
 .logo {
-  width: $space-xl;
   fill: $secondaryColor;
+  margin: $space-stack-m;
 }

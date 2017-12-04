@@ -18,23 +18,24 @@
   text-overflow: none;
   
   &--primary {
-    @extend .btn;
     background-color: $primaryColor;
     border-color: $primaryColor;
     color: $lightAccentColor;
   } 
   &--secondary {
-    @extend .btn;
     background-color: $lightAccentColor;
     border-color: $primaryColor;
     color:$primaryColor;
   }
   &--promo {
-    @extend .btn;
     background-color: $secondaryColor;
     border-color: $secondaryColor;
     color: $lightAccentColor;
   }   
+}
+
+.btn--sm {
+  padding: $space-inset-squish-l;
 }
 .btn--med {
   padding: 7px 40px;  

@@ -9,6 +9,14 @@ $space-inset-s: 0.5rem 0.5rem 0.5rem 0.5rem;
 $space-inset-m: 1rem 1rem 1rem 1rem;
 $space-inset-l: 2rem 2rem 2rem 2rem;
 $space-inset-xl: 4rem 4rem 4rem 4rem;
+
+$space-inset-squish-s: 0.25rem 0.5rem 0.25rem 0.5rem;
+$space-inset-squish-m: 0.5rem 1rem 0.5rem 1rem;
+$space-inset-squish-l: 1rem 2rem 1rem 2rem;
+
+$space-inset-stretch-s: 0.75rem 0.5rem 0.75rem 0.5rem;
+$space-inset-stretch-m: 1.5rem 1rem 1.5rem 1rem;
+
 $space-stack-default: 0 0 1rem 0;
 $space-stack-xs: 0 0 0.25rem 0;
 $space-stack-s: 0 0 0.5rem 0;
@@ -26,3 +34,4 @@ $space-s: 0.5rem;
 $space-m: 1rem;
 $space-l: 2rem;
 $space-xl: 4rem;
+$space-xxl: 8rem;

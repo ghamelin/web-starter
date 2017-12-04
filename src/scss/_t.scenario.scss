@@ -1,0 +1,21 @@
+.scenario{
+  .btn{
+    &__correct{
+      background-color: green;
+      color: darkgray;
+      border-color: green;
+    }
+    &__incorrect {
+       background-color: $primaryColor;
+      color: darkgrey;
+      border-color: $primaryColor;
+    }
+    &__no-pref {
+      background-color: $darkAccentColor;
+      border-color:rgb(41, 41, 41);
+       color: darkgray;
+    }
+
+  }
+  
+}

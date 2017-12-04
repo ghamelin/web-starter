@@ -1,21 +1,31 @@
 .section{
   width: 100%;
   padding: $space-inset-default;
-  margin: $space-stack-l;
+  margin: $space-stack-xl;
   text-align: center;
 
   &.hero {
-    .title--sect{
+    >.title{
       margin:$space-stack-s;
-      text-align: center;
     }
   }
   &.disclaim{
-    >.title--sect{
+    >.title{
       color: $primaryColor;
-      margin: $space-stack-s;
-      text-align: center;
+      margin:$space-inset-xs;
       text-transform: uppercase;
+    }
+  }
+  &.bginfo{
+    >.title {
+      padding:$space-inset-squish-m;
+      margin:$space-stack-xs
+    }
+  }
+  &.scenario {
+    >.title {
+      text-align: left;
+      padding:$space-inset-squish-m;
     }
   }
 }
@@ -24,6 +34,6 @@
 }
 .sect--text {
   text-align: left;
-  line-height: 4;
+  line-height: 3;
   margin:$space-stack-s;
 }
