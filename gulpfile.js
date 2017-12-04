@@ -13,7 +13,10 @@ var plugs           = [shortcss, cssnext];
 var sassSrc = "src/scss/main.scss";
 var sassDest = "public/css/";
 
-gulp.task('browser-sync', ['nodemon'], function () {
+/**
+ * inits browser sync server, calls nodemon as a dependencey, sets up a proxy for the nodemon, attaches bs live reload, opens chrome
+ */
+gulp.task('serve', ['nodemon'], function () {
   browserSync.init(null, {
     proxy: "http://localhost:5000",
     files: ["public/**/*.*"],
@@ -23,6 +26,10 @@ gulp.task('browser-sync', ['nodemon'], function () {
   gulp.watch('src/scss/*.scss',['scss'])
   gulp.watch("./*.html").on('change', browserSync.reload);
 });
+
+/**
+ * starts nodemon and runs server.js
+ */
 gulp.task('nodemon', function (cb) {
 
   var started = false;
@@ -38,7 +45,11 @@ gulp.task('nodemon', function (cb) {
     }
   });
 });
-// compile scss
+
+
+/**
+ * compiles scss
+ */
 gulp.task('scss', function () {
   return gulp.src([sassSrc])
     .pipe(plugins.sourcemaps.init())
@@ -49,8 +60,11 @@ gulp.task('scss', function () {
     .pipe(plugins.sourcemaps.write('.'))
     .pipe(gulp.dest(sassDest))
     .pipe(browserSync.stream());
-})
-//process images
+});
+
+/**
+ * processes and compresses images
+ */
 gulp.task('img', function () {
   return gulp.src(['src/img/*.+(png|jpg|gif|svg|ico)'])
     .pipe(plugins.imagemin({
@@ -61,21 +75,22 @@ gulp.task('img', function () {
     }))
     .pipe(gulp.dest('public/img/'))
 });
-gulp.task('watch',function(){
-  gulp.watch('src/scss/*.scss', ['sass']);
-})
-// clean the production folder
+
+/**
+ * deletes everything in public folder 
+ */
 gulp.task('clean', function () {
   return del.sync('public/*')
 });
 
-// build site for production
-// cleans folder and recompiles all files into production folder
+/**
+ * builds site for prod. calls a runsequence starting with clean and then calls img and scss tasks as dependencies
+ */
 gulp.task('build', function () {
   runSequence('clean', ['img', 'scss']);
 });
 
-
-gulp.task('default', function (){
-  runSequence('browser-sync', 'build');
-});
+/**
+ * calls serve function
+ */
+gulp.task('default', ['serve']);
