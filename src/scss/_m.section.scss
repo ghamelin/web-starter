@@ -1,0 +1,22 @@
+.section{
+  width: 100%;
+  padding: $spacing-inset-xl;
+
+  &--hero {
+    @extend .section;
+
+    .title--sect{
+      text-align: center;
+    }
+  }
+  &--disclaim{
+    @extend .section;
+
+    >.title--sect{
+      @extend .title;
+      color: $primaryColor;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
