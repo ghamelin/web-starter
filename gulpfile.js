@@ -20,7 +20,7 @@ gulp.task('browser-sync', ['nodemon'], function () {
     browser: "google chrome",
     port: 7000,
   });
-  gulp.watch(sassDest).on('change',browserSync.reload);
+  gulp.watch('src/scss/*.scss',['scss'])
   gulp.watch("./*.html").on('change', browserSync.reload);
 });
 gulp.task('nodemon', function (cb) {
@@ -39,7 +39,7 @@ gulp.task('nodemon', function (cb) {
   });
 });
 // compile scss
-gulp.task('sass', function () {
+gulp.task('scss', function () {
   return gulp.src([sassSrc])
     .pipe(plugins.sourcemaps.init())
     .pipe(sass())
@@ -61,6 +61,9 @@ gulp.task('img', function () {
     }))
     .pipe(gulp.dest('public/img/'))
 });
+gulp.task('watch',function(){
+  gulp.watch('src/scss/*.scss', ['sass']);
+})
 // clean the production folder
 gulp.task('clean', function () {
   return del.sync('public/*')
@@ -69,10 +72,10 @@ gulp.task('clean', function () {
 // build site for production
 // cleans folder and recompiles all files into production folder
 gulp.task('build', function () {
-  runSequence('clean', ['img', 'sass']);
+  runSequence('clean', ['img', 'scss']);
 });
 
 
 gulp.task('default', function (){
-  runSequence('browserSync', 'build');
+  runSequence('browser-sync', 'build');
 });
