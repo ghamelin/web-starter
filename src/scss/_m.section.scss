@@ -1,22 +1,29 @@
 .section{
   width: 100%;
-  padding: $spacing-inset-xl;
+  padding: $spacing-inset-default;
+  margin: $spacing-stack-l;
+  text-align: center;
 
-  &--hero {
-    @extend .section;
-
+  &.hero {
     .title--sect{
+      margin:$spacing-stack-s;
       text-align: center;
     }
   }
-  &--disclaim{
-    @extend .section;
-
+  &.disclaim{
     >.title--sect{
-      @extend .title;
       color: $primaryColor;
+      margin: $spacing-stack-s;
       text-align: center;
       text-transform: uppercase;
     }
   }
+}
+.sect--body {
+  text-align: center;
+}
+.sect--text {
+  text-align: left;
+  line-height: 4;
+  margin:$spacing-stack-s;
 }
