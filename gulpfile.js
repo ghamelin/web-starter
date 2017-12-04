@@ -93,4 +93,6 @@ gulp.task('build', function () {
 /**
  * calls serve function
  */
-gulp.task('default', ['serve']);
+gulp.task('default', function () {
+  runSequence('serve', 'build');
+});
