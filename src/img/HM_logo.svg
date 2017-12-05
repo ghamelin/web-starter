@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="488" height="739" viewBox="0 0 488 739"><style>.a{fill:#333;}</style><title>  HM_logo</title><desc>  Created using Figma</desc><use xlink:href="#path0_fill" transform="translate(-2770.02 13.0254)" class="a"/><use xlink:href="#path1_fill" transform="translate(-2770.02 13.0254)" class="a"/><use xlink:href="#path2_fill" transform="translate(-2770.02 13.0254)" class="a"/><defs><path class="logo" d="M38.9 725.4L70.5 738.8 378.4 13.4 346.9 0 38.9 725.4Z"/><path d="M191.7 183.2L227.5 183.2 227.5 268 183.2 372.4 35.8 372.4 35.8 517.2 0 517.2 0 183.9 35.8 183.9 35.8 336.6 191.7 336.6 191.7 183.2Z"/><path d="M486.7 594.1L350.1 272.3 327.8 272.3 254.4 445.4 227.7 382.6 208.2 428.4 243.2 510.8 265.5 510.8 339 337.7 453.7 608.1 486.7 594.1Z"/></defs></svg>
+<svg width="488" height="739" viewBox="0 0 488 739" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>HM_logo</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2771 -13)">
+<g id="HM_logo">
+<use xlink:href="#path0_fill" transform="translate(-2770.02 13.0254)" fill="#333333"/>
+<use xlink:href="#path1_fill" transform="translate(-2770.02 13.0254)" fill="#333333"/>
+<use xlink:href="#path2_fill" transform="translate(-2770.02 13.0254)" fill="#333333"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 38.934 725.41L 70.5118 738.814L 378.43 13.404L 346.852 0L 38.934 725.41Z"/>
+<path id="path1_fill" d="M 191.716 183.156L 227.534 183.156L 227.534 267.966L 183.211 372.386L 35.8183 372.386L 35.8183 517.232L 0 517.232L 0 183.895L 35.8183 183.895L 35.8183 336.568L 191.716 336.568L 191.716 183.156Z"/>
+<path id="path2_fill" d="M 486.683 594.068L 350.11 272.322L 327.81 272.322L 254.352 445.379L 227.695 382.581L 208.24 428.417L 243.202 510.782L 265.502 510.782L 338.96 337.724L 453.712 608.064L 486.683 594.068Z"/>
+</defs>
+</svg>
