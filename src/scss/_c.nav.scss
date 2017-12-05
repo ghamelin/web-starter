@@ -1,7 +1,16 @@
  .bottom-nav{
-   margin: 0 auto;
+  margin: $space-stack-l;
   text-align: center;
   width: 100%;
   display: inline-flex;
   justify-content: center;
+ }
+ .column-head {
+  margin: $space-stack-s;
+ }
+ .nav-botm {
+   padding: $space-inset-m;
+ }
+ .botm-nav-item{
+   margin: $space-stack-s;
  }
